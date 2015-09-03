@@ -1,0 +1,7 @@
+{
+  "name": "a-talk-with-no-name",
+  "version": "1.0.0",
+  "dependencies": {
+    "prism": "gh-pages"
+  }
+}
