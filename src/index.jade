@@ -31,6 +31,18 @@ html
         <!-- ...it is TERRIFYING. It's like, "Yeah, only one person actually understands the streams code base. And actually, they don't understand it either. No one understands it." And then someone comes along and says, "Gosh, it's so complex, shouldn't we work on refactoring it to make it more understandable?" And eight other people say "DO. NOT. TOUCH. THE. STREAMS. CODE. Did you not hear us say that no one understands how it works?!" When you hear that sort of stuff, it makes approaching the Node.js code base intimidating.-->
 
       section
+
+        <!-- So then some well-meaning person decides, "I'd like to contribute to Node. But I'm not going to do something like even try to READ the streams code. I know! I'll run a JavaScript lint checking tool on the code base and submit fixes!" -->
+
+      section
+
+        <!-- So this is for all my Lint Peeps out there. Lint Peeps: I love you. But you gotta stop doing this. Here's the thing: Node already has a linter. We're not going to change the thousands of instances of `==` throughout the code to `===` just because Douglass Crockford things everyone should. And there are actually good reasons not to make those kinds of wholesale changes on a sprawling code base. -->
+
+      section
+
+        <!-- But I like your moxie, Lint Peeps! So let me give you a better way! -->
+
+      section
         h2 Thank You
         h3 Rich Trott
         h4 @trott
