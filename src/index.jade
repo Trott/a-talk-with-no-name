@@ -8,6 +8,9 @@ html
     link(rel='stylesheet', type='text/css', href='build/build.css')
   
   style.
+    .me {
+      background-image: url('images/me.jpg')
+    }
     .terrifying {
       background-image: url('images/terrifying.jpg')
     }
@@ -23,15 +26,25 @@ html
         h1 A Talk With No Name
 
         <!-- Welcome to a talk that is so fresh and original, it doesn't even have a name yet. You are so lucky. Just like that horse in that song. You know, the horse with no name. Lucky horse. No name. No one can tell it what to do. It was a free spirit. No one was saying, "Hey, go faster, Mr. Ed, I've got a sprint planning meeting I'm late for!" No, instead, they're like, "I'd tell this horse to go faster but I don't know how to address this horse. I do not know this horse's name." That's like this talk. You cannot control it. So just let go! Let it take you wherever it wants to take you on its waves of bliss. Are you ready? Good. Here we go. -->
-      
+
+      section
+        h2 YOU Are Invited
+
+        <!-- Actually, not having a title seemed both inhospitable and that Horse With No Name schpiel wasn't very funny. So here's the title I came up with. YOU are invited! -->
+
+      section(data-bespoke-backdrop='me')
+        h3 Yes, you!
+
+        <!-- Yes, YOU! Oh, and all the images in this talk will be of Muppets because he's my daughter is big into Cookie Monster and Sesame Street right now. And I'm kind of making an assumption that Children's Television Workshop is not so litigious as to sue some idiot using Cookie Monster to illustrate a tech talk. And if they are, maybe I get to become some kind of weird cause célèbre. ANYWAY, what is it that you are invited to? We'll get to that in a moment. -->
+
       section
         h2 Let's talk about streams&hellip;
         
-        <!-- If you ever listen to Node core contributors talk about streams... -->
+        <!-- First, streams. If you ever listen to Node core contributors talk about streams... -->
 
-      section(data-bespoke-backdrop='terrifying')
+      section(data-bespoke-backdrop='me')
 
-        <!-- ...it is TERRIFYING. It's like, "Yeah, only one person actually understands the streams code base. And actually, they don't understand it either. No one understands it." And then someone comes along and says, "Gosh, it's so complex, shouldn't we work on refactoring it to make it more understandable?" And eight other people say "DO. NOT. TOUCH. THE. STREAMS. CODE. Did you not hear us say that no one understands how it works?!" When you hear that sort of stuff, it makes approaching the Node.js code base intimidating.-->
+        <!-- ...it is TERRIFYING. (Don't worry. There are other visuals in this talk besides this one. Stay with me.) But streams. It's like, "Yeah, only one person actually understands the streams code base. And actually, they don't understand it either. No one understands it." And then someone comes along and says, "Gosh, it's so complex, shouldn't we work on refactoring it to make it more understandable?" And eight other people say "DO. NOT. TOUCH. THE. STREAMS. CODE. Did you not hear us say that no one understands how it works?!" When you hear that sort of stuff, it makes approaching the Node.js code base intimidating.-->
 
       section
         h2 "I know! I'll run ESLint!""
