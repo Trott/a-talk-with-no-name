@@ -17,6 +17,9 @@ html
     .serious {
       background-image: url('images/serious.jpg')
     }
+    .one {
+      background-image: url('images/one.jpg')
+    }
 
   body
 
@@ -28,7 +31,9 @@ html
         <!-- Welcome to a talk that is so fresh and original, it doesn't even have a name yet. You are so lucky. Just like that horse in that song. You know, the horse with no name. Lucky horse. No name. No one can tell it what to do. It was a free spirit. No one was saying, "Hey, go faster, Mr. Ed, I've got a sprint planning meeting I'm late for!" No, instead, they're like, "I'd tell this horse to go faster but I don't know how to address this horse. I do not know this horse's name." That's like this talk. You cannot control it. So just let go! Let it take you wherever it wants to take you on its waves of bliss. Are you ready? Good. Here we go. -->
 
       section
-        h2 YOU Are Invited
+        h2 
+          em YOU
+          span  Are Invited
 
         <!-- Actually, not having a title seemed both inhospitable and that Horse With No Name schpiel wasn't very funny. So here's the title I came up with. YOU are invited! -->
 
@@ -43,6 +48,7 @@ html
         <!-- First, streams. If you ever listen to Node core contributors talk about streams... -->
 
       section(data-bespoke-backdrop='me')
+        h3 
 
         <!-- ...it is TERRIFYING. (Don't worry. There are other visuals in this talk besides this one. Stay with me.) But streams. It's like, "Yeah, only one person actually understands the streams code base. And actually, they don't understand it either. No one understands it." And then someone comes along and says, "Gosh, it's so complex, shouldn't we work on refactoring it to make it more understandable?" And eight other people say "DO. NOT. TOUCH. THE. STREAMS. CODE. Did you not hear us say that no one understands how it works?!" When you hear that sort of stuff, it makes approaching the Node.js code base intimidating.-->
 
@@ -53,12 +59,16 @@ html
 
       section(data-bespoke-backdrop='serious')
 
-        <!-- So this is for all my Lint Peeps out there. Lint Peeps: I love you. But you gotta stop doing this. Here's the thing: Node already has a linter. We're not going to change the thousands of instances of `==` throughout the code to `===` just because Douglass Crockford things everyone should. And there are actually good reasons not to make those kinds of wholesale changes on a sprawling code base. -->
+        <!-- So this is for all my Lint Peeps out there. Lint Peeps: I love you. But you gotta stop doing this. Here's the thing: Node already has a linter. We're not going to change the thousands of instances of `==` throughout the code to `===` just because Douglass Crockford thinks everyone should. And there are actually good reasons not to make those kinds of wholesale changes on a sprawling code base. -->
 
       section
-        h2 "This kid's got moxie!"
+        h2 About your moxie&hellip;
 
         <!-- But I like your moxie, Lint Peeps! So let me give you a better way! -->
+
+      section(data-bespoke-backdrop='one')
+
+        <!-- But, first; firstly; number one; before I do that, I am legally obligated to mention the good-first-contribution tag in the Node.js issue tracker. And that's a fine thing to try to use. There can be challenges there, like four other people who are doing what you're doing and working on the same change. But it works pretty well. Go for that if it suits your style! -->
 
       section
         h2 Thank You
