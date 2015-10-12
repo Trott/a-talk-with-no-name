@@ -20,6 +20,12 @@ html
     .one {
       background-image: url('images/one.jpg')
     }
+    .why {
+      background-image: url('images/why.jpg')
+    }
+    .focus{
+      background-image: url('images/focus.png')
+    }
 
   body
 
@@ -40,7 +46,7 @@ html
       section(data-bespoke-backdrop='me')
         h3 Yes, you!
 
-        <!-- Yes, YOU! Oh, and all the images in this talk will be of Muppets because he's my daughter is big into Cookie Monster and Sesame Street right now. And I'm kind of making an assumption that Children's Television Workshop is not so litigious as to sue some idiot using Cookie Monster to illustrate a tech talk. And if they are, maybe I get to become some kind of weird cause célèbre. ANYWAY, what is it that you are invited to? We'll get to that in a moment. -->
+        <!-- Yes, YOU! All the images in this talk will be of Muppets because he's my daughter is big into Cookie Monster and Sesame Street right now. And I'm kind of making an assumption that Children's Television Workshop is not so litigious as to sue some idiot using Cookie Monster to illustrate a tech talk. And if they are, maybe I get to become some kind of weird cause célèbre. ANYWAY, what is it that you are invited to? We'll get to that in a moment. -->
 
       section
         h2 Let's talk about streams&hellip;
@@ -48,18 +54,18 @@ html
         <!-- First, streams. If you ever listen to Node core contributors talk about streams... -->
 
       section(data-bespoke-backdrop='me')
-        h3 
+        h3 Be very scared.
 
         <!-- ...it is TERRIFYING. (Don't worry. There are other visuals in this talk besides this one. Stay with me.) But streams. It's like, "Yeah, only one person actually understands the streams code base. And actually, they don't understand it either. No one understands it." And then someone comes along and says, "Gosh, it's so complex, shouldn't we work on refactoring it to make it more understandable?" And eight other people say "DO. NOT. TOUCH. THE. STREAMS. CODE. Did you not hear us say that no one understands how it works?!" When you hear that sort of stuff, it makes approaching the Node.js code base intimidating.-->
 
       section
         h2 "I know! I'll run ESLint!""
 
-        <!-- So then some well-meaning person decides, "I'd like to contribute to Node. But I'm not going to do something like even try to READ the streams code. I know! I'll run a JavaScript linting tool on the code base and submit fixes!" -->
+        <!-- So then some well-meaning person decides, "I'd like to contribute to Node. But I'm not going to do something like even try to READ the streams code. Do you hear how the core devs talk about it?! I'll just run a JavaScript linting tool on the code base and submit fixes!" -->
 
       section(data-bespoke-backdrop='serious')
 
-        <!-- So this is for all my Lint Peeps out there. Lint Peeps: I love you. But you gotta stop doing this. Here's the thing: Node already has a linter. We're not going to change the thousands of instances of `==` throughout the code to `===` just because Douglass Crockford thinks everyone should. And there are actually good reasons not to make those kinds of wholesale changes on a sprawling code base. -->
+        <!-- So this is for all my Lint Peeps out there. Lint Peeps: I love you. But you gotta stop doing this. Sam the Eagle does not approve. Here's the thing: Node already has a linter. We're not going to change the thousands of instances of `==` throughout the code to `===` just because Douglass Crockford thinks everyone should. By the way, he's right, but that's not the point. There are actually good reasons not to make those kinds of wholesale changes on a sprawling code base. -->
 
       section
         h2 About your moxie&hellip;
@@ -68,22 +74,21 @@ html
 
       section(data-bespoke-backdrop='one')
 
-        <!-- But, first; firstly; number one; before I do that, I am legally obligated to mention the good-first-contribution tag in the Node.js issue tracker. Go to the issue tracker and do a search for issues labeled good-first-contribution. And that's a fine thing to try to use. There can be challenges there, but it works pretty well. Go for that if that's your jam! But that's not what I'm going to talk about today. -->
+        <!-- But, first; firstly; number one; before I do that, I am legally obligated to mention the good-first-contribution tag in the Node.js issue tracker. Go to the issue tracker and do a search for issues labeled good-first-contribution. There can be challenges there, but it works pretty well. Go for it if that's your jam! But that's not what I'm going to talk about today. -->
 
       section
         h2 Tests!
 
-        <!-- Dive into the test directory in Node.js source code and start reading and improving tests. The code tends to be approachable and you will learn all about whatever is being tested. You will find improvements or omissions and you can contribute those back to the community. I could end my talk here, but I have too many Muppet images so let's go on a bit. -->
+        <!-- Instead, I'm going to talk about starting by reading tests. Dive into the test directory in Node.js source code and start improving tests. The code tends to be approachable and you will learn all about whatever is being tested. You will find improvements or omissions and you can contribute those back to the community. I could end my talk here, but I have too many Muppet images so let's go on a bit. -->
 
-      section
+      section(data-bespoke-backdrop='why')
         h3 Why tests?
 
-        <!-- Why are tests a good way to get started with the code? -->
+        <!-- Why are tests a good way to get started with the code? Thank you for asking, Animal. Allow me to explain. -->
 
-      section
-        h3 I want to be a dentist!
+      section(data-bespoke-backdrop='focus')
 
-        <!-- Tests allow you to learn a narrow part of the code base really well. And, in many cases, they may be the closest thing to documentation for otherwise-undocumented features. -->
+        <!-- Tests allow you FO-CUS and learn a narrow part of the code base really well. And, in many cases, they may be the closest thing to documentation for otherwise-undocumented features. -->
 
       section
         h3 Let your freak flag fly.
