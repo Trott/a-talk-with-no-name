@@ -29,6 +29,9 @@ html
     .norms{
       background-image: url('images/norms.jpg')
     }
+    .arrow{
+      background-image: url('images/arrow.jpg')
+    }
 
   body
 
@@ -57,7 +60,7 @@ html
         <!-- First, streams. If you ever listen to Node core contributors talk about streams... -->
 
       section(data-bespoke-backdrop='me')
-        h3 Be very scared.
+        h3 Be very afraid.
 
         <!-- ...it is TERRIFYING. (Don't worry. There are other visuals in this talk besides this one. Stay with me.) But streams. It's like, "Yeah, only one person actually understands the streams code base. And actually, they don't understand it either. No one understands it." And then someone comes along and says, "Gosh, it's so complex, shouldn't we work on refactoring it to make it more understandable?" And eight other people say "DO. NOT. TOUCH. THE. STREAMS. CODE. Did you not hear us say that no one understands how it works?!" When you hear that sort of stuff, it makes approaching the Node.js code base intimidating.-->
 
@@ -97,10 +100,10 @@ html
 
         <!-- You don't have to conform to the prevailing norms nearly as much as you might otherwise. You can concentrate on learning the system and not learning coding conventions. Maintain the existing style in a file and make sure nothing complains when you type "make jslint" and you should be good to go. Prefer function expressions over function delcarations, or vice versa? Sure, whatevs! It's a bit ironic, really, that tests--the code you write to make sure there's no loosey-goosey business anywhere else in the code--let you be all loosey goosey with your style. What can I say. The world is a magical place. -->
 
-      section
-        h3 OMG! Arrow functions!
- 
-        <!-- Want to use ES6 Promises in your tests? Go for it! Not so much in core Library code. -->
+      section(data-bespoke-backdrop='arrow')
+        h3  &#9829; Fat Arrows! &#9829;
+
+        <!-- You love ES6 so much that you're tweeting right now about how you can't believe I'm calling it ES6 and not by its correct ES 2015 designation. Want to use ES6 Promises in your tests? Go for it! Not so much in core Library code. -->
 
       section
         h2 Thank You
