@@ -38,6 +38,9 @@ html
     .blanket {
       background-image: url('images/blanket.jpg')
     }
+    .pepe {
+      background-image: url('images/pepe.jpg')
+    }
 
   body
 
@@ -127,6 +130,10 @@ html
         code assert.fail('do not do this');
 
         <!-- Here's another one: Find something that is prone to misuse, and chances are it's being misused somewhere. This code is wrong. The message string is the third parameter to assert.fail, not the first. This should be assert.fail(null, null, message). When I checked for instances of this in the test directory a few weeks ago, there were 13. Maybe I fixed them. Maybe I didn't. But there's a *ton* of stuff like this. -->
+
+      section(data-bespoke-backdrop='pepe')
+
+        <!-- So, I said you were invited. You are invited to contribute to Node. I've talked about tests, but there's documentation, there's helping out with this meetup, there's all the C++ sharp edges, whatever. You are invited. And if I can help you, get in touch. Or get in touch with someone else. I have no special status in Node and there are dozens of people more qualified than me to help you. Get involved. There is no shortage of work to be done and I assure you, it is very gratifying. You will feel as cool as that guy. That's Pepe. He's my favorite. --> 
 
       section
         h2 Thank You
