@@ -32,6 +32,9 @@ html
     .arrow{
       background-image: url('images/arrow.jpg')
     }
+    .flaky{
+      background-image: url('images/flaky.png')
+    }
 
   body
 
@@ -109,8 +112,9 @@ html
         h2 Start With Tests...
         h3 ...but now what?
 
-      section
-        h3 Flaky Tests
+      section(data-bespoke-backdrop='flaky')
+        
+        <!-- Node has a number of tests that are designated as "flaky". That is, they fail sometimes when they should not. There's actually a way these tests are designated as flaky with metadata in the test directory, but you can get lots of information about them by doing a search like this one in the repo. Look at that! 23 results for open issues with the word "flaky" in them! That's 23 things for you to fix! 23 is a number that's so big, I've never heard The Count get up to it! -->
 
       section
         h3 TODOs
