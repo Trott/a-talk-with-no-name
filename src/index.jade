@@ -124,7 +124,9 @@ html
         <!-- Node wasn't developed with TDD. The project does not have 100% coverage. (Yeah. Blankets. Coverage. It's a stretch.) There's lots of missing tests to write. Node's shortcoming is your opportunity! Uh, also, if you can create an easy-to-run task that will report test coverage stats for Node, you will make a lot of people very happy. -->
 
       section
-        h3 Benchmarks
+        code assert.fail('do not do this');
+
+        <!-- Here's another one: Find something that is prone to misuse, and chances are it's being misused somewhere. This code is wrong. The message string is the third parameter to assert.fail, not the first. This should be assert.fail(null, null, message). When I checked for instances of this in the test directory a few weeks ago, there were 13. Maybe I fixed them. Maybe I didn't. But there's a *ton* of stuff like this. -->
 
       section
         h2 Thank You
