@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>A Talk With No Name</title>
+    <title>YOU Are Invited</title>
     <link rel="stylesheet" type="text/css" href="build/build.css">
   </head>
   <style>
@@ -45,47 +45,51 @@
   <body>
     <article>
       <section>
-        <h1>A Talk With No Name</h1><!-- Welcome to a talk that is so fresh and original, it doesn't even have a name yet. You are so lucky. Just like that horse in that song. You know, the horse with no name. Lucky horse. No name. No one can tell it what to do. It was a free spirit. No one was saying, "Hey, go faster, Mr. Ed, I've got a sprint planning meeting I'm late for!" No, instead, they're like, "I'd tell this horse to go faster but I don't know how to address this horse. I do not know this horse's name." That's like this talk. You cannot control it. So just let go! Let it take you wherever it wants to take you on its waves of bliss. Are you ready? Good. Here we go. -->
-      </section>
-      <section>
-        <h2><em>YOU</em><span> Are Invited</span></h2><!-- Actually, not having a title seemed both inhospitable and that Horse With No Name schpiel wasn't very funny. So here's the title I came up with. YOU are invited! -->
+        <h1><em>YOU</em><span> Are Invited</span></h1><!-- Hi, everyone. I know I'm supposed to tell you a little bit about myself at the start of a talk, but I *hate* doing that so we are going to abruptly transition--segue, if you will--from this awkward disclaimer to the talk proper. If you've never contributed to Node but would like to, or if you have contributed to Node but would like to contribute more, that's what I'd like to talk a little bit about. You are cordially invited. -->
       </section>
       <section data-bespoke-backdrop="me">
-        <h3>Yes, you!</h3><!-- Yes, YOU! All the images in this talk will be of Muppets because he's my daughter is big into Cookie Monster and Sesame Street right now. And I'm kind of making an assumption that Children's Television Workshop is not so litigious as to sue some idiot using Cookie Monster to illustrate a tech talk. And if they are, maybe I get to become some kind of weird cause célèbre. ANYWAY, what is it that you are invited to? We'll get to that in a moment. -->
+        <h3>Yes, you!</h3><!-- Yes, YOU! All the images in this talk will be of Muppets because my daughter is big into Cookie Monster and Sesame Street right now. And I'm kind of making an assumption that Children's Television Workshop and Jim Henson Productions Inc. are not so litigious as to sue some idiot using too many Muppet images to illustrate a tech talk. And if they are, maybe I get to become some kind of weird cause célèbre. ANYWAY, what is it that you are invited to? We'll get to that in a moment. -->
       </section>
       <section>
         <h2>Let's talk about streams&hellip;</h2><!-- First, streams. If you ever listen to Node core contributors talk about streams... -->
       </section>
       <section data-bespoke-backdrop="me">
-        <h3>Be very afraid.</h3><!-- ...it is TERRIFYING. (Don't worry. There are other visuals in this talk besides this one. Stay with me.) But streams. It's like, "Yeah, only one person actually understands the streams code base. And actually, they don't understand it either. No one understands it." And then someone comes along and says, "Gosh, it's so complex, shouldn't we work on refactoring it to make it more understandable?" And eight other people say "DO. NOT. TOUCH. THE. STREAMS. CODE. Did you not hear us say that no one understands how it works?!" When you hear that sort of stuff, it makes approaching the Node.js code base intimidating.-->
+        <h3>Be very afraid.</h3><!-- ...it is TERRIFYING. (Don't worry. There are other visuals in this talk besides Beeker. Stay with me.) But streams. It's like, "Yeah, only one person actually understands the streams code base. And actually, they don't understand it either. No one understands it." And then someone comes along and says, "Gosh, it's so complex, shouldn't we work on refactoring it to make it more understandable?" And eight other people say "DO. NOT. TOUCH. THE. STREAMS. CODE. Did you not hear us say that no one understands how it works?!" When you hear that sort of stuff, it makes approaching the Node.js code base intimidating.-->
       </section>
       <section>
-        <h2>"I know! I'll run ESLint!""</h2><!-- So then some well-meaning person decides, "I'd like to contribute to Node. But I'm not going to do something like even try to READ the streams code. Do you hear how the core devs talk about it?! I'll just run a JavaScript linting tool on the code base and submit fixes!" -->
+        <h2>"I know! I'll run ESLint!"</h2><!-- So then some well-meaning person decides, "I'd like to contribute to Node. But I'm not going to do something like even try to READ the streams code. Do you hear how the core devs talk about it?! I'll just run a JavaScript linting tool on the code base and submit fixes!" -->
       </section>
       <section data-bespoke-backdrop="serious"><!-- So this is for all my Lint Peeps out there. Lint Peeps: I love you. But you gotta stop doing this. Sam the Eagle does not approve. Here's the thing: Node already has a linter. We're not going to change the thousands of instances of `==` throughout the code to `===` just because Douglass Crockford thinks everyone should. By the way, he's right, but that's not the point. There are actually good reasons not to make those kinds of wholesale changes on a sprawling code base. --></section>
       <section>
         <h2>About your moxie&hellip;</h2><!-- But I like your moxie, Lint Peeps! So let me give you a better way! -->
       </section>
-      <section data-bespoke-backdrop="one"><!-- But, first; firstly; number one; before I do that, I am legally obligated to mention the good-first-contribution tag in the Node.js issue tracker. Go to the issue tracker and do a search for issues labeled good-first-contribution. There can be challenges there, but it works pretty well. Go for it if that's your jam! But that's not what I'm going to talk about today. --></section>
+      <section data-bespoke-backdrop="one"><!-- But, first; firstly; number one; before I do that, I am legally obligated to mention the good-first-contribution tag in the Node.js issue tracker. 
+        <Go>to the issue tracker and do a search for issues labeled good-first-contribution. There can be challenges there, but it works pretty well. Go for it if that's your jam! </Go>
+        <But>that's not what I'm going to talk about today. --></But>
+      </section>
       <section>
-        <h2>Tests!</h2><!-- Instead, I'm going to talk about starting by reading tests. Dive into the test directory in Node.js source code and start improving tests. The code tends to be approachable and you will learn all about whatever is being tested. You will find improvements or omissions and you can contribute those back to the community. I could end my talk here, but I have too many Muppet images so let's go on a bit. -->
+        <h2>Tests!</h2><!-- Instead, I'm going to talk about starting by reading tests. 
+        <Dive>into the test directory in Node.js source code and start improving the tests. </Dive>
+        <The>code tends to be approachable and you will learn all about whatever is being tested. </The>
+        <You>will find improvements or omissions and you can contribute those back to the community. </You>
+        <I>could end my talk here, but I have too many Muppet images so let's go on a bit. --></I>
       </section>
       <section data-bespoke-backdrop="why">
         <h3>Why tests?</h3><!-- Why are tests a good way to get started with the code? Thank you for asking, Animal. Allow me to explain. -->
       </section>
       <section data-bespoke-backdrop="focus"><!-- Tests allow you FO-CUS and learn a narrow part of the code base really well. And, in many cases, they may be the closest thing to documentation for otherwise-undocumented features. --></section>
-      <section data-bespoke-backdrop="norms"><!-- You don't have to conform to the prevailing norms nearly as much as you might otherwise. You can concentrate on learning the system and not learning coding conventions. Maintain the existing style in a file and make sure nothing complains when you type "make jslint" and you should be good to go. Prefer function expressions over function delcarations, or vice versa? Sure, whatevs! It's a bit ironic, really, that tests--the code you write to make sure there's no loosey-goosey business anywhere else in the code--let you be all loosey goosey with your style. What can I say. The world is a magical place. --></section>
+      <section data-bespoke-backdrop="norms"><!-- You don't have to conform to the prevailing norms nearly as much as you might otherwise. You can concentrate on learning the system and not learning coding conventions. Maintain the existing style in a file and make sure nothing complains when you type "make jslint" and you should be good to go. Prefer function expressions over function delcarations, or vice versa? Sure, whatevs! I mean, who even understands what I just asked? I don't! It's a bit ironic, really, that tests--the code you write to make sure there's no loosey-goosey business anywhere else in the code--let you be all loosey goosey with your style. What can I say. The world is a magical place. --></section>
       <section data-bespoke-backdrop="arrow">
-        <h3> &#9829; Fat Arrows! &#9829;</h3><!-- You love ES6 so much that you're tweeting right now about how you can't believe I'm calling it ES6 and not by its correct ES 2015 designation. Want to use ES6 Promises in your tests? Go for it! Not so much in core Library code. -->
+        <h3> &#9829; Fat Arrows! &#9829;</h3><!-- You love ES6 so much that you're tweeting right now about how you can't believe I'm calling it ES6 and not ES 2015. Want to use ES6 Promises in your tests? Go for it! Not so much in core Library code. -->
       </section>
       <section>
         <h2>Start With Tests...</h2>
-        <h3>...but now what?</h3>
+        <h3>...but now what?</h3><!-- OK, start with tests, but *how* do we start with tests? -->
       </section>
       <section data-bespoke-backdrop="flaky"><!-- Node has a number of tests that are designated as "flaky". That is, they fail sometimes when they should not. There's actually a way these tests are designated as flaky with metadata in the test directory, but you can get lots of information about them by doing a search like this one in the repo. Look at that! 23 results for open issues with the word "flaky" in them! That's 23 things for you to fix! 23 is a number that's so big, I've never heard The Count get up to it! --></section>
       <section data-bespoke-backdrop="blanket"><!-- Node wasn't developed with TDD. The project does not have 100% coverage. (Yeah. Blankets. Coverage. It's a stretch.) There's lots of missing tests to write. Node's shortcoming is your opportunity! Uh, also, if you can create an easy-to-run task that will report test coverage stats for Node, you will make a lot of people very happy. --></section>
       <section><code>assert.fail('do not do this');</code><!-- Here's another one: Find something that is prone to misuse, and chances are it's being misused somewhere. This code is wrong. The message string is the third parameter to assert.fail, not the first. This should be assert.fail(null, null, message). When I checked for instances of this in the test directory a few weeks ago, there were 13. Maybe I fixed them. Maybe I didn't. But there's a *ton* of stuff like this. --></section>
-      <section data-bespoke-backdrop="pepe"><!-- So, I said you were invited. You are invited to contribute to Node. I've talked about tests, but there's documentation, there's helping out with this meetup, there's all the C++ sharp edges, whatever. You are invited. And if I can help you, get in touch. Or get in touch with someone else. I have no special status in Node and there are dozens of people more qualified than me to help you. Get involved. There is no shortage of work to be done and I assure you, it is very gratifying. You will feel as cool as that guy. That's Pepe. He's my favorite. --> </section>
+      <section data-bespoke-backdrop="pepe"><!-- So, I said you were invited. You are invited to contribute to Node. I've talked about tests, but there's documentation, there's helping out with this meetup, there's all the C++ sharp edges, there's Node evangelism, whatever. You are invited. And if I can help you, get in touch. Or get in touch with someone else. I have no special status in Node and there are dozens of people more qualified than me to help you. Get involved. There is no shortage of work to be done and I assure you, it is very gratifying. You will feel as cool as Pepe the King Prawn up there. He's my favorite. Or, if you know Pepe, he's my favorite, OK? --> </section>
       <section>
         <h2>Thank You</h2>
         <h3>Rich Trott</h3>
