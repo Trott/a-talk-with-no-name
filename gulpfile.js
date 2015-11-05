@@ -6,7 +6,9 @@ var pkg = require('./package.json'),
   plumber = require('gulp-plumber'),
   rename = require('gulp-rename'),
   connect = require('gulp-connect'),
-  browserify = require('gulp-browserify'),
+  browserify = require('browserify'),
+  debowerify = require('debowerify'),
+  source = require('vinyl-source-stream'),
   uglify = require('gulp-uglify'),
   jade = require('gulp-jade'),
   stylus = require('gulp-stylus'),
@@ -20,9 +22,16 @@ var pkg = require('./package.json'),
   isDist = process.argv.indexOf('serve') === -1;
 
 gulp.task('js', ['clean:js'], function() {
-  return gulp.src('src/scripts/main.js')
-    .pipe(isDist ? through() : plumber())
-    .pipe(browserify({ transform: ['debowerify'], debug: !isDist }))
+  // set up the browserify instance on a task basis
+  var b = browserify({
+    entries: 'src/scripts/main.js',
+    debug: true,
+    // defining transforms here will avoid crashing your stream
+    transform: [debowerify]
+  });
+
+  return b.bundle()
+    .pipe(source('src/scripts/main.js'))
     .pipe(isDist ? uglify() : through())
     .pipe(rename('build.js'))
     .pipe(gulp.dest('dist/build'))
