@@ -9,7 +9,8 @@ var bespoke = require('bespoke'),
   hash = require('bespoke-hash'),
   progress = require('bespoke-progress'),
   forms = require('bespoke-forms'),
-  secondary = require('bespoke-secondary');
+  secondary = require('bespoke-secondary'),
+  indexfinger = require('bespoke-indexfinger');
 
 // Bespoke.js
 bespoke.from('article', [
@@ -22,7 +23,8 @@ bespoke.from('article', [
   hash(),
   progress(),
   forms(),
-  secondary()
+  secondary(),
+  indexfinger()
 ]);
 
 // Prism syntax highlighting
