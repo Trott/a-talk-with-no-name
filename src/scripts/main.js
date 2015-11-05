@@ -23,8 +23,8 @@ bespoke.from('article', [
   hash(),
   progress(),
   forms(),
-  secondary(),
-  indexfinger()
+  indexfinger(),
+  secondary()
 ]);
 
 // Prism syntax highlighting
