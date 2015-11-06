@@ -12,9 +12,6 @@
       .me {
         background-image: url('images/me.jpg')
       }
-      .terrifying {
-        background-image: url('images/terrifying.jpg')
-      }
       .serious {
         background-image: url('images/serious.jpg')
       }
@@ -49,30 +46,79 @@
     <article>
       <section>
         <h1><em>YOU</em><span> Are Invited</span></h1>
-        <aside>Hi, everyone. I know I'm supposed to tell you a little bit about myself at the start of a talk, but I *hate* doing that so we are going to abruptly transition from this awkward disclaimer to the talk proper. If you've never contributed to Node but would like to, or if you have contributed to Node but would like to contribute more, that's what I'd like to talk a little bit about. You are cordially invited.</aside>
+        <aside>
+          <p>Hi, everyone. </p>
+          <p>I know I'm supposed start by telling you a little bit about myself.</p>
+          <p>But I *hate* doing that.</p>
+          <p>So we are going to abruptly transition from this little awkward disclaimer going on right here to the actual talk. </p>
+          <p>You are cordially invited.</p>
+        </aside>
+      </section>
+      <section data-bespoke-backdrop="me">
+        <h3>Yes, you!</h3>
+        <aside>
+          <p>Yes, YOU!</p>
+          <p>All the images in this talk, by the way, will be of Muppets because my daughter is big into Cookie Monster right now.</p>
+          <p>And I'm kind of making an assumption that Children's Television Workshop and Jim Henson Productions Inc. are not so litigious as to sue some idiot for using too many Muppet images to illustrate a tech talk. </p>
+          <p>And if they *are* that litigious, maybe I get to become some kind of weird...</p>
+        </aside>
       </section>
       <section>
-        <h3>Yes, you!</h3>
-        <aside>Yes, YOU! All the images in this talk will be of Muppets because my daughter is big into Cookie Monster and Sesame Street right now. And I'm kind of making an assumption that Children's Television Workshop and Jim Henson Productions Inc. are not so litigious as to sue some idiot using too many Muppet images to illustrate a tech talk. And if they are, maybe I get to become some kind of weird cause célèbre. ANYWAY, what is it that you are invited to? We'll get to that in a moment.</aside>
+        <h3>cause célèbre</h3>
+        <aside>
+          <p>However you say that phrase. I don't know.</p>
+          <p>To all the people who just blurted out the correct pronunciation: </p>
+          <p>You know how to kill a joke. </p>
+          <p>If I ever do standup you are not invited. </p>
+          <p>However, the title of this talk, once again, is you *are* invited, so you're good for right now.</p>
+          <p>Let's move on.</p>
+        </aside>
       </section>
       <section>
         <h2>Let's talk about streams&hellip;</h2>
-        <aside>First, streams. If you ever listen to Node core contributors talk about streams...</aside>
+        <aside>
+          <p>First, streams.</p>
+          <p>If you ever listen to Node core contributors talk about streams...</p>
+        </aside>
       </section>
       <section data-bespoke-backdrop="me">
         <h3>Be very afraid.</h3>
-        <aside>...it is TERRIFYING. (Don't worry. There are other visuals in this talk besides Beeker. Stay with me.) But streams. It's like, "Yeah, only one person actually understands the streams code base. And actually, they don't understand it either. No one understands it." And then someone comes along and says, "Gosh, it's so complex, shouldn't we work on refactoring it to make it more understandable?" And eight other people say "DO. NOT. TOUCH. THE. STREAMS. CODE. Did you not hear us say that no one understands how it works?!" When you hear that sort of stuff, it makes approaching the Node.js code base intimidating.</aside>
+        <aside>
+          <p>...it is TERRIFYING.</p>
+          <p>(Don't worry. There are other visuals in this talk besides Beeker. Stay with me.)</p>
+          <p>But streams. It's like, "Yeah, only one person actually understands the streams code base. And actually, they don't really understand it either. No one understands it." </p>
+          <p>And then someone new and eager comes along and says, "Gosh, it's so complex, shouldn't we work on refactoring it to make it more understandable?"</p>
+          <p>And eight other people are like "DO. NOT. TOUCH. THE. STREAMS. CODE. Did you not hear what we just said? No one understands how it works?!" </p>
+          <p>When you hear that sort of stuff, it makes approaching the Node.js code base intimidating.</p>
+        </aside>
       </section>
       <section>
         <h2>"I know! I'll run ESLint!"</h2>
-        <aside>So then some well-meaning person decides, "I'd like to contribute to Node. But I'm not going to do something like even try to READ the streams code. Do you hear how the core devs talk about it?! I'll just run a JavaScript linting tool on the code base and submit fixes!"</aside>
+        <aside>
+          <p>So then the well-meaning person decides: </p>
+          <p>"I'd like to contribute to Node. But I'm not going to do something like even try to READ the streams code. Do you hear how the core devs talk about it?! I'll just run a JavaScript linting tool on the code base and submit fixes!"</p>
+        </aside>
       </section>
       <section data-bespoke-backdrop="serious">
-        <aside>So this is for all my Lint Peeps out there. Lint Peeps: I love you. But you gotta stop doing this. Sam the Eagle does not approve. Here's the thing: Node already has a linter. We're not going to change the thousands of instances of `==` throughout the code to `===` just because Douglass Crockford thinks everyone should. By the way, he's right, but that's not the point. There are actually good reasons not to make those kinds of wholesale changes on a sprawling code base.</aside>
+        <aside>
+          <p>So this is for all my Lint Peeps out there. </p>
+          <p>Lint Peeps: I love you. </p>
+          <p>But you gotta stop doing this.</p>
+          <p>Sam the Eagle does not approve. </p>
+          <p>(You didn't know the look-of-disapproval emoticon was supposed to be Sam the Eagle, did you? That's the type of science I'm dropping here tonight. Go ahead and tweet about it. It's tweet-worthy.)</p>
+          <p>Here's the thing: </p>
+          <p>Node already has a linter. </p>
+          <p>We're not going to change the thousands of instances of `==` throughout the code to `===` just because Douglas Crockford thinks everyone should do that. </p>
+          <p>By the way, Douglas Crockford is right, but that's not the point.</p>
+          <p>There are actually good reasons not to make those kinds of wholesale changes on a sprawling code base upon which an inconceivably large software ecosystem depends.</p>
+        </aside>
       </section>
       <section>
         <h2>About your moxie&hellip;</h2>
-        <aside>But I like your moxie, Lint Peeps! So let me give you a better way!</aside>
+        <aside>
+          <p>But I like your moxie, Lint Peeps!</p>
+          <p>So let me give you a better way!</p>
+        </aside>
       </section>
       <section data-bespoke-backdrop="one">
         <aside>
@@ -88,43 +134,141 @@
           <p>Dive into the test directory in Node.js source code and start improving the tests. </p>
           <p>The code tends to be approachable and you will learn all about whatever is being tested. </p>
           <p>You will find improvements or omissions and you can contribute those back to the community. </p>
+          <p>You might even end up figuring out how streams work under the hood!</p>
+          <p>Ha ha! No, just kidding, you're never gonna figure out how streams work under the hood. No one will.</p>
+          <p>But you will learn a lot!</p>
           <p>I could end my talk here, but I have too many Muppet images so let's go on a bit.</p>
         </aside>
       </section>
       <section data-bespoke-backdrop="why">
         <h3>Why tests?</h3>
-        <aside>Why are tests a good way to get started with the code? Thank you for asking, Animal. Allow me to explain.</aside>
+        <aside>
+          <p>Why are tests a good way to get started with the code?</p>
+          <p>Thank you for asking, Animal. Allow me to explain.</p>
+        </aside>
       </section>
       <section data-bespoke-backdrop="focus">
-        <aside>Tests allow you FO-CUS and learn a narrow part of the code base really well. And, in many cases, they may be the closest thing to documentation for otherwise-undocumented features.</aside>
+        <aside>
+          <p>Tests allow you FO-CUS and learn a narrow part of the code base really well.</p>
+          <p>And, in many cases, they may be the closest thing to documentation for otherwise-undocumented features.</p>
+        </aside>
       </section>
       <section data-bespoke-backdrop="norms">
-        <aside>You don't have to conform to the prevailing norms nearly as much as you might otherwise. You can concentrate on learning the system and not learning coding conventions. Maintain the existing style in a file and make sure nothing complains when you type "make jslint" and you should be good to go. Prefer function expressions over function delcarations, or vice versa? Sure, whatevs! I mean, who even understands what I just asked? I don't! It's a bit ironic, really, that tests--the code you write to make sure there's no loosey-goosey business anywhere else in the code--let you be all loosey goosey with your style. What can I say. The world is a magical place.</aside>
+        <aside>
+          <p>You don't have to conform to the prevailing norms nearly as much as you might otherwise.</p>
+          <p>You can feel free to be your unconventional self like Lew Zealand here with his boomerang fish.</p>
+          <p>You can concentrate on learning the system and not learning coding conventions.</p>
+          <p>Maintain the existing style in a file and make sure nothing complains when you type "make jslint" and you should be good to go.</p>
+          <p>Prefer function expressions over function delcarations, or vice versa? </p>
+          <p>Sure, whatevs! I mean, who even understands what I just asked?</p>
+          <p>I don't! </p>
+          <p>It's a bit ironic, incidentally, that tests--the code you write to make sure there's no loosey-goosey funny business anywhere else in the code--let you be all loosey goosey with your style.</p>
+          <p>What can I say. The world is a magical place.</p>
+        </aside>
       </section>
       <section data-bespoke-backdrop="arrow">
         <h3> &#9829; Fat Arrows! &#9829;</h3>
-        <aside>You love ES6 so much that you're tweeting right now about how you can't believe I'm calling it ES6 and not ES 2015. Want to use ES6 Promises in your tests? Go for it! Not so much in core Library code.</aside>
+        <aside>
+          <p>You love ES6 so much that you're tweeting right now about how you can't believe I'm calling it ES6 and not ES 2015.</p>
+          <p>Want to use ES6 Promises in your tests? Go for it!</p>
+          <p>Not so much in core Library code.</p>
+        </aside>
       </section>
       <section>
         <h2>Start With Tests...</h2>
         <h3>...but now what?</h3>
-        <aside>OK, start with tests, but *how* do we start with tests?</aside>
+        <aside>
+          <p>OK, start with tests.</p>
+          <p>But *how* do we start with tests?</p>
+        </aside>
       </section>
       <section data-bespoke-backdrop="flaky">
-        <aside>Node has a number of tests that are designated as "flaky". That is, they fail sometimes when they should not. There's actually a way these tests are designated as flaky with metadata in the test directory, but you can get lots of information about them by doing a search like this one in the repo. Look at that! 23 results for open issues with the word "flaky" in them! That's 23 things for you to fix! 23 is a number that's so big, I've never heard The Count get up to it!</aside>
+        <aside>
+          <p>Node has a number of tests that are designated as "flaky".</p>
+          <p>That is, they fail sometimes when they should not.</p>
+          <p>There's actually a way these tests are designated as flaky with metadata in the test directory, but you can get lots of information about them by doing a search like this one in the repo.</p>
+          <p>Look at that!</p>
+          <p>23 results for open issues with the word "flaky" in them!</p>
+          <p>That's 23 things for you to fix!</p>
+          <p>23 is a number that's so big, I've never heard The Count get up to it!</p>
+        </aside>
       </section>
       <section data-bespoke-backdrop="blanket">
-        <aside>Node wasn't developed with TDD. The project does not have 100% coverage. (Yeah. Blankets. Coverage. It's a stretch.) There's lots of missing tests to write. Node's shortcoming is your opportunity! Uh, also, if you can create an easy-to-run task that will report test coverage stats for Node, you will make a lot of people very happy.</aside>
+        <aside>
+          <p>Node wasn't developed with TDD.</p>
+          <p>The project does not have 100% coverage.</p>
+          <p>(Yeah. Blankets. Coverage. It's a stretch.)</p>
+          <p>There's lots of missing tests to write.</p>
+          <p>Node's shortcoming is your opportunity!</p>
+          <p>Uh, also, if you can create an easy-to-run task that will report test coverage stats for Node, you will make a lot of people very happy.</p>
+          <p>(I know half of you are thinking "I'll just run coveralls on it." That won't work but you should try it anyway to see why it won't work. Then you'll come up with something that does work and I'll be all like "OMG you are the most amazing person.")</p>
+        </aside>
       </section>
       <section><code>assert.fail('do not do this');</code>
-        <aside>Here's another one: Find something that is prone to misuse, and chances are it's being misused somewhere. This code is wrong. The message string is the third parameter to assert.fail, not the first. This should be assert.fail(null, null, message). When I checked for instances of this in the test directory a few weeks ago, there were 13. Maybe I fixed them. Maybe I didn't. But there's a *ton* of stuff like this.</aside>
+        <aside>
+          <p>Here's another one:</p>
+          <p>Find something that is prone to misuse, and chances are it's being misused somewhere.</p>
+          <p>This code is wrong.</p>
+          <p>The message string is the third parameter to assert.fail, not the first.</p>
+          <p>This should be assert.fail(null, null, message).</p>
+          <p>When I checked for instances of this in the test directory a few weeks ago, there were 13.</p>
+          <p>Maybe I fixed them. Maybe I didn't.</p>
+          <p>But the point is there's a *ton* of stuff like that.</p>
+        </aside>
       </section>
       <section data-bespoke-backdrop="pepe">
-        <aside>So, I said you were invited. You are invited to contribute to Node. I've talked about tests, but there's documentation, there's helping out with this meetup, there's all the C++ sharp edges, there's Node evangelism, whatever. You are invited. And if I can help you, get in touch. Or get in touch with someone else. I have no special status in Node and there are dozens of people more qualified than me to help you. Get involved. There is no shortage of work to be done and I assure you, it is very gratifying. You will feel as cool as Pepe the King Prawn up there. He's my favorite. Or, if you know Pepe, he's my favorite, OK?</aside>
+        <aside>
+          <p>So, I said you were invited.</p>
+          <p>You are invited to contribute to Node.</p>
+          <p>I've talked about tests, but there's documentation, there's helping out with this meetup, there's all the C++ sharp edges, there's Node's evangelism working group, whatever.</p>
+          <p>You are invited.</p>
+          <p>And if I can help you, get in touch.</p>
+          <p>Or get in touch with someone else.</p>
+          <p>I have no special status in Node and there are dozens of people more qualified than me to help you. </p>
+          <p>Get involved.</p>
+          <p>There is no shortage of work to be done and I assure you, it is very gratifying.</p>
+          <p>You will feel as cool as Pepe the King Prawn up there.</p>
+          <p>He's my favorite.</p>
+          <p>Or, if you know Pepe, he's my favorite, OK?</p>
+        </aside>
       </section>
       <section>
         <h2>Thank You</h2>
         <h3>Rich Trott</h3>
+        <h4>@trott</h4>
+      </section>
+      <section>
+        <h2>Bonus tracks!</h2>
+      </section>
+      <section>
+        <h3>Wat?!?!?!</h3>
+      </section>
+      <section>
+        <h3>I know!</h3>
+      </section>
+      <section><code>npm install -g stackwatch</code>
+        <aside>
+          <p>You don't want to contribute to core code.</p>
+          <p>You just want to help people.</p>
+          <p>Run stackwatch.</p>
+          <p>Every time a new question appears on StackOverflow with the node.js tag, it will interrupt whatever you are doing by opening a browser window to that question so you can help someone.</p>
+        </aside>
+      </section>
+      <section><code>https://github.com/nodejs/help/issues</code>
+        <aside>
+          <p>StackOverflow too StackOverflow-y for you? </p>
+          <p>Answer issues in the Node.js help repo!</p>
+          <p>File issues in the Node.js help repo!</p>
+        </aside>
+      </section>
+      <section><code>https://nodeschool.io/</code>
+        <aside>
+          <p>Volunteer to mentor at a NodeSchool event!</p>
+          <p>Or just attend a NodeSchool event!</p>
+        </aside>
+      </section>
+      <section>
+        <h4>Rich Trott</h4>
         <h4>@trott</h4>
       </section>
     </article>
