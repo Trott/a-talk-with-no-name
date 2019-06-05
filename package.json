@@ -23,7 +23,7 @@
     "bespoke-touch": "^1.0.0",
     "browserify": "^12.0.1",
     "debowerify": "^0.7.1",
-    "del": "^1.1.1",
+    "del": "^4.1.1",
     "gh-pages": "^0.2.0",
     "gulp": "^3.8.1",
     "gulp-autoprefixer": "0.0.7",
